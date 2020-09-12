@@ -9,6 +9,8 @@
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
 
+    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
+
     //! moment.js locale configuration
 
     var monthsStrictRegex = /^(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)/i,
@@ -29,7 +31,7 @@
             /^déc/i,
         ];
 
-    var fr = moment.defineLocale('fr', {
+    var fr = moment__default['default'].defineLocale('fr', {
         months: 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split(
             '_'
         ),

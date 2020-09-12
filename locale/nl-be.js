@@ -10,6 +10,8 @@
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
 
+    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
+
     //! moment.js locale configuration
 
     var monthsShortWithDots = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split(
@@ -34,7 +36,7 @@
         ],
         monthsRegex = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
 
-    var nlBe = moment.defineLocale('nl-be', {
+    var nlBe = moment__default['default'].defineLocale('nl-be', {
         months: 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split(
             '_'
         ),

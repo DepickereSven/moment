@@ -11,6 +11,8 @@
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
 
+    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
+
     //! moment.js locale configuration
 
     function processRelativeTime(number, withoutSuffix, key, isFuture) {
@@ -28,7 +30,7 @@
         return withoutSuffix ? format[key][0] : format[key][1];
     }
 
-    var de = moment.defineLocale('de', {
+    var de = moment__default['default'].defineLocale('de', {
         months: 'Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split(
             '_'
         ),

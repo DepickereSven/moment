@@ -9,6 +9,8 @@
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
 
+    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
+
     //! moment.js locale configuration
 
     var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split(
@@ -31,7 +33,7 @@
         ],
         monthsRegex = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
 
-    var es = moment.defineLocale('es', {
+    var es = moment__default['default'].defineLocale('es', {
         months: 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split(
             '_'
         ),
@@ -107,7 +109,7 @@
             dow: 1, // Monday is the first day of the week.
             doy: 4, // The week that contains Jan 4th is the first week of the year.
         },
-        invalidDate: 'Fecha invalida',
+        invalidDate: 'Fecha inválida',
     });
 
     return es;

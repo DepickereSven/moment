@@ -9,9 +9,11 @@
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
 
+    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
+
     //! moment.js locale configuration
 
-    var enGb = moment.defineLocale('en-gb', {
+    var enGb = moment__default['default'].defineLocale('en-gb', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split(
             '_'
         ),

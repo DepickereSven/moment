@@ -9,9 +9,11 @@
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
 
+    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
+
     //! moment.js locale configuration
 
-    var ja = moment.defineLocale('ja', {
+    var ja = moment__default['default'].defineLocale('ja', {
         eras: [
             {
                 since: '2019-05-01',
