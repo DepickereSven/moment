@@ -3,17 +3,15 @@
 //! author : Chris Gedrim : https://github.com/chrisgedrim
 
 ;(function (global, factory) {
-   typeof exports === 'object' && typeof module !== 'undefined'
-       && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
-   factory(global.moment)
+    typeof exports === 'object' && typeof module !== 'undefined'
+    && typeof require === 'function' ? factory(require('../moment')) :
+        typeof define === 'function' && define.amd ? define(['../moment'], factory) :
+            factory(global.moment)
 }(this, (function (moment) { 'use strict';
-
-    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
 
     //! moment.js locale configuration
 
-    var enGb = moment__default['default'].defineLocale('en-gb', {
+    var enGb = moment.defineLocale('en-gb', {
         months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split(
             '_'
         ),
@@ -64,10 +62,10 @@
                         : b === 1
                         ? 'st'
                         : b === 2
-                        ? 'nd'
-                        : b === 3
-                        ? 'rd'
-                        : 'th';
+                            ? 'nd'
+                            : b === 3
+                                ? 'rd'
+                                : 'th';
             return number + output;
         },
         week: {

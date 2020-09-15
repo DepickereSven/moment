@@ -3,17 +3,15 @@
 //! author : LI Long : https://github.com/baryon
 
 ;(function (global, factory) {
-   typeof exports === 'object' && typeof module !== 'undefined'
-       && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
-   factory(global.moment)
+    typeof exports === 'object' && typeof module !== 'undefined'
+    && typeof require === 'function' ? factory(require('../moment')) :
+        typeof define === 'function' && define.amd ? define(['../moment'], factory) :
+            factory(global.moment)
 }(this, (function (moment) { 'use strict';
-
-    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
 
     //! moment.js locale configuration
 
-    var ja = moment__default['default'].defineLocale('ja', {
+    var ja = moment.defineLocale('ja', {
         eras: [
             {
                 since: '2019-05-01',

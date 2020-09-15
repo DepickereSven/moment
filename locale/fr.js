@@ -3,13 +3,11 @@
 //! author : John Fischer : https://github.com/jfroffice
 
 ;(function (global, factory) {
-   typeof exports === 'object' && typeof module !== 'undefined'
-       && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
-   factory(global.moment)
+    typeof exports === 'object' && typeof module !== 'undefined'
+    && typeof require === 'function' ? factory(require('../moment')) :
+        typeof define === 'function' && define.amd ? define(['../moment'], factory) :
+            factory(global.moment)
 }(this, (function (moment) { 'use strict';
-
-    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
 
     //! moment.js locale configuration
 
@@ -31,7 +29,7 @@
             /^déc/i,
         ];
 
-    var fr = moment__default['default'].defineLocale('fr', {
+    var fr = moment.defineLocale('fr', {
         months: 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split(
             '_'
         ),

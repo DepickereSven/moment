@@ -5,13 +5,11 @@
 //! author : Mikolaj Dadela : https://github.com/mik01aj
 
 ;(function (global, factory) {
-   typeof exports === 'object' && typeof module !== 'undefined'
-       && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
-   factory(global.moment)
+    typeof exports === 'object' && typeof module !== 'undefined'
+    && typeof require === 'function' ? factory(require('../moment')) :
+        typeof define === 'function' && define.amd ? define(['../moment'], factory) :
+            factory(global.moment)
 }(this, (function (moment) { 'use strict';
-
-    var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
 
     //! moment.js locale configuration
 
@@ -30,7 +28,7 @@
         return withoutSuffix ? format[key][0] : format[key][1];
     }
 
-    var de = moment__default['default'].defineLocale('de', {
+    var de = moment.defineLocale('de', {
         months: 'Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split(
             '_'
         ),
